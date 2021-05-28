@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.home.HomeFragment">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Storage"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="70"
+                    app:indicatorColor="?attr/colorAccent"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="41.8% of 128 GB used"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storage Locations"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="?attr/colorSurface"
+            android:minHeight="50dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Storage"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:drawableLeft="@drawable/ic_phone_storage"
+                    android:drawablePadding="10dp"/>
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_forward"
+                    style="@style/Theme.OmegaFileManager.Icon"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="?attr/colorSurface"
+            android:minHeight="50dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="External Storage"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:drawableLeft="@drawable/ic_sd_card"
+                    android:drawablePadding="10dp"/>
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Theme.OmegaFileManager.Icon"
+                    android:src="@drawable/ic_arrow_forward"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
